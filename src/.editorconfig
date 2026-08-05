@@ -1,0 +1,905 @@
+# Удалите строку ниже, если вы хотите наследовать параметры .editorconfig из каталогов, расположенных выше в иерархии
+root = true
+
+# Файлы C#
+[*.cs]
+
+#### Основные параметры EditorConfig ####
+
+# Отступы и интервалы
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+# Предпочтения для новых строк
+end_of_line = crlf
+insert_final_newline = false
+
+#### Рекомендации по написанию кода .NET ####
+
+# Упорядочение Using
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = false
+file_header_template = unset
+
+# Предпочтения для this. и Me.
+dotnet_style_qualification_for_event = false
+dotnet_style_qualification_for_field = false
+dotnet_style_qualification_for_method = false
+dotnet_style_qualification_for_property = false
+
+# Параметры использования ключевых слов языка и типов BCL
+dotnet_style_predefined_type_for_locals_parameters_members = true
+dotnet_style_predefined_type_for_member_access = true
+
+# Предпочтения для скобок
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+
+# Предпочтения модификатора
+dotnet_style_require_accessibility_modifiers = for_non_interface_members
+
+# Выражения уровень предпочтения
+dotnet_style_coalesce_expression = true
+dotnet_style_collection_initializer = true
+dotnet_style_explicit_tuple_names = true
+dotnet_style_namespace_match_folder = true
+dotnet_style_null_propagation = true
+dotnet_style_object_initializer = true
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+dotnet_style_prefer_auto_properties = true
+dotnet_style_prefer_collection_expression = true
+dotnet_style_prefer_compound_assignment = true
+dotnet_style_prefer_conditional_expression_over_assignment = true
+dotnet_style_prefer_conditional_expression_over_return = true
+dotnet_style_prefer_foreach_explicit_cast_in_source = when_strongly_typed
+dotnet_style_prefer_inferred_anonymous_type_member_names = true
+dotnet_style_prefer_inferred_tuple_names = true
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+dotnet_style_prefer_simplified_boolean_expressions = true
+dotnet_style_prefer_simplified_interpolation = true
+
+# Предпочтения для полей
+dotnet_style_readonly_field = true
+
+# Настройки параметров
+dotnet_code_quality_unused_parameters = all
+
+# Параметры подавления
+dotnet_remove_unnecessary_suppression_exclusions = none
+
+# Предпочтения для новых строк
+dotnet_style_allow_multiple_blank_lines_experimental = true
+dotnet_style_allow_statement_immediately_after_block_experimental = true
+
+#### Рекомендации по написанию кода C# ####
+
+# Предпочтения var
+csharp_style_var_elsewhere = false
+csharp_style_var_for_built_in_types = false
+csharp_style_var_when_type_is_apparent = false
+
+# Члены, заданные выражениями
+csharp_style_expression_bodied_accessors = true
+csharp_style_expression_bodied_constructors = false
+csharp_style_expression_bodied_indexers = true
+csharp_style_expression_bodied_lambdas = true
+csharp_style_expression_bodied_local_functions = false
+csharp_style_expression_bodied_methods = false
+csharp_style_expression_bodied_operators = false
+csharp_style_expression_bodied_properties = true
+
+# Настройки соответствия шаблонов
+csharp_style_pattern_matching_over_as_with_null_check = true
+csharp_style_pattern_matching_over_is_with_cast_check = true
+csharp_style_prefer_extended_property_pattern = true
+csharp_style_prefer_not_pattern = true
+csharp_style_prefer_pattern_matching = true
+csharp_style_prefer_switch_expression = true
+
+# Настройки проверки на null
+csharp_style_conditional_delegate_call = true
+
+# Предпочтения модификатора
+csharp_prefer_static_local_function = true
+csharp_preferred_modifier_order = public,private,protected,internal,file,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,required,volatile,async
+csharp_style_prefer_readonly_struct = true
+csharp_style_prefer_readonly_struct_member = true
+
+# Предпочтения для блоков кода
+csharp_prefer_braces = true
+csharp_prefer_simple_using_statement = true
+csharp_style_namespace_declarations = file_scoped
+csharp_style_prefer_method_group_conversion = true
+csharp_style_prefer_primary_constructors = true
+csharp_style_prefer_top_level_statements = true
+
+# Выражения уровень предпочтения
+csharp_prefer_simple_default_expression = true
+csharp_style_deconstructed_variable_declaration = true
+csharp_style_implicit_object_creation_when_type_is_apparent = true
+csharp_style_inlined_variable_declaration = true
+csharp_style_prefer_index_operator = true
+csharp_style_prefer_local_over_anonymous_function = true
+csharp_style_prefer_null_check_over_type_check = true
+csharp_style_prefer_range_operator = true
+csharp_style_prefer_tuple_swap = true
+csharp_style_prefer_utf8_string_literals = true
+csharp_style_throw_expression = true
+csharp_style_unused_value_assignment_preference = discard_variable
+csharp_style_unused_value_expression_statement_preference = discard_variable
+
+# предпочтения для директивы using
+csharp_using_directive_placement = outside_namespace
+
+# Предпочтения для новых строк
+csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = true
+csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental = true
+csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental = true
+csharp_style_allow_blank_lines_between_consecutive_braces_experimental = true
+csharp_style_allow_embedded_statements_on_same_line_experimental = true
+
+#### Правила форматирования C# ####
+
+# Предпочтения для новых строк
+csharp_new_line_before_catch = true
+csharp_new_line_before_else = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_open_brace = all
+csharp_new_line_between_query_expression_clauses = true
+
+# Предпочтения для отступов
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = true
+csharp_indent_labels = one_less_than_current
+csharp_indent_switch_labels = true
+
+# Предпочтения для интервалов
+csharp_space_after_cast = false
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_after_comma = true
+csharp_space_after_dot = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_around_declaration_statements = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_before_comma = false
+csharp_space_before_dot = false
+csharp_space_before_open_square_brackets = false
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+csharp_space_between_square_brackets = false
+
+# Предпочтения переноса
+csharp_preserve_single_line_blocks = true
+csharp_preserve_single_line_statements = true
+
+#### Стили именования ####
+
+# Правила именования
+
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.private_or_internal_field_should_be_privatefield.severity = suggestion
+dotnet_naming_rule.private_or_internal_field_should_be_privatefield.symbols = private_or_internal_field
+dotnet_naming_rule.private_or_internal_field_should_be_privatefield.style = privatefield
+
+# Спецификации символов
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers = 
+
+dotnet_naming_symbols.private_or_internal_field.applicable_kinds = field
+dotnet_naming_symbols.private_or_internal_field.applicable_accessibilities = internal, private, private_protected
+dotnet_naming_symbols.private_or_internal_field.required_modifiers = readonly
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types.required_modifiers = 
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.required_modifiers = 
+
+# Стили именования
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.begins_with_i.required_prefix = I
+dotnet_naming_style.begins_with_i.required_suffix = 
+dotnet_naming_style.begins_with_i.word_separator = 
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+dotnet_naming_style.privatefield.required_prefix = _
+dotnet_naming_style.privatefield.required_suffix = 
+dotnet_naming_style.privatefield.word_separator = 
+dotnet_naming_style.privatefield.capitalization = camel_case
+
+# StyleCopAnalyzer
+
+# Disable rule for unnecessary using directives
+dotnet_diagnostic.SA0001.severity = none
+
+# Enforce rules for file headers
+dotnet_diagnostic.SA0002.severity = error
+
+# Enforce spacing rules around code elements
+dotnet_diagnostic.SA1000.severity = none
+
+# Enforce the use of braces for single-line statements
+dotnet_diagnostic.SA1001.severity = error
+
+# Enforce proper formatting for blocks of code
+dotnet_diagnostic.SA1002.severity = error
+
+# Enforce whitespace before braces
+dotnet_diagnostic.SA1003.severity = error
+
+# Enforce a space between the closing parenthesis and the opening brace of control statements
+dotnet_diagnostic.SA1004.severity = error
+
+# Disable rule for unnecessary blank lines
+dotnet_diagnostic.SA1005.severity = none
+
+# Enforce the use of parentheses around expressions
+dotnet_diagnostic.SA1006.severity = error
+
+# Enforce a single blank line between code blocks
+dotnet_diagnostic.SA1007.severity = error
+
+# Enforce correct spacing after commas
+dotnet_diagnostic.SA1008.severity = error
+
+# Disable rule for unnecessary usings
+dotnet_diagnostic.SA1009.severity = none
+
+# Disable rule for method declaration spacing
+dotnet_diagnostic.SA1010.severity = none
+
+# Enforce whitespace around operators
+dotnet_diagnostic.SA1011.severity = error
+
+# Enforce consistent spacing around keywords
+dotnet_diagnostic.SA1012.severity = error
+
+# Enforce use of a single space between closing parentheses and opening brace
+dotnet_diagnostic.SA1013.severity = error
+
+# Enforce consistent spacing around the `=>` operator in expressions
+dotnet_diagnostic.SA1014.severity = error
+
+# Enforce placing the keyword `async` at the beginning of method declarations
+dotnet_diagnostic.SA1015.severity = error
+
+# Enforce consistent spacing for lambda parameters
+dotnet_diagnostic.SA1016.severity = error
+
+# Enforce proper whitespace between operators and operands
+dotnet_diagnostic.SA1017.severity = error
+
+# Enforce a space after commas in lists
+dotnet_diagnostic.SA1018.severity = error
+
+# Enforce correct space before and after the `=` operator
+dotnet_diagnostic.SA1019.severity = error
+
+# Enforce spacing between method parameters
+dotnet_diagnostic.SA1020.severity = error
+
+# Enforce consistent formatting for multiline method declarations
+dotnet_diagnostic.SA1021.severity = error
+
+# Enforce consistent placement of braces on methods and other code blocks
+dotnet_diagnostic.SA1022.severity = error
+
+# Enforce the use of spaces around assignment operators
+dotnet_diagnostic.SA1023.severity = error
+
+# Enforce proper formatting in declarations of multi-line arrays
+dotnet_diagnostic.SA1024.severity = error
+
+# Enforce proper spacing after the type in variable declarations
+dotnet_diagnostic.SA1025.severity = error
+
+# Enforce correct indentation and spacing around variables and fields
+dotnet_diagnostic.SA1026.severity = error
+
+# Enforce spacing after comma-separated statements
+dotnet_diagnostic.SA1027.severity = error
+
+# Enforce proper indentation of switch cases
+dotnet_diagnostic.SA1028.severity = error
+
+# Enforce correct indentation for large blocks of code
+dotnet_diagnostic.SA1100.severity = error
+
+# Disable rule for unnecessary comments
+dotnet_diagnostic.SA1101.severity = none
+
+# Enforce consistency in formatting of comments
+dotnet_diagnostic.SA1102.severity = error
+
+# Enforce consistency in comments within namespaces
+dotnet_diagnostic.SA1103.severity = error
+
+# Enforce formatting of comments on method headers
+dotnet_diagnostic.SA1104.severity = error
+
+# Enforce consistent comment formatting for regions
+dotnet_diagnostic.SA1105.severity = error
+
+# Enforce consistent formatting of region names in comments
+dotnet_diagnostic.SA1106.severity = none
+
+# Enforce proper formatting for file header comments
+dotnet_diagnostic.SA1107.severity = error
+
+# Disable rule for indentation in comments
+dotnet_diagnostic.SA1108.severity = none
+
+# Enforce proper commenting of code elements like fields
+dotnet_diagnostic.SA1109.severity = error
+
+# Enforce appropriate comment placement after code blocks
+dotnet_diagnostic.SA1110.severity = error
+
+# Enforce comment consistency across methods
+dotnet_diagnostic.SA1111.severity = error
+
+# Enforce comment consistency in declarations and variables
+dotnet_diagnostic.SA1112.severity = error
+
+# Enforce consistent comment formatting for array declarations
+dotnet_diagnostic.SA1113.severity = error
+
+# Enforce spacing after the `//` for single-line comments
+dotnet_diagnostic.SA1114.severity = error
+
+# Enforce consistent formatting for multi-line comments
+dotnet_diagnostic.SA1115.severity = error
+
+# Disable rule for blank lines in comments
+dotnet_diagnostic.SA1116.severity = none
+
+# Disable rule for comments at the end of a line
+dotnet_diagnostic.SA1117.severity = none
+
+# Disable rule for extra blank lines before comments
+dotnet_diagnostic.SA1118.severity = none
+
+# Disable rule for comments after control flow statements
+dotnet_diagnostic.SA1119.severity = none
+
+# Disable rule for end-of-line comment spacing
+dotnet_diagnostic.SA1120.severity = none
+
+# Enforce consistent formatting for multi-line comments
+dotnet_diagnostic.SA1121.severity = error
+
+# Enforce consistent comment placement and spacing
+dotnet_diagnostic.SA1122.severity = error
+
+# Disable rule for comment alignment with code blocks
+dotnet_diagnostic.SA1123.severity = none
+
+# Disable rule for line breaks in comments
+dotnet_diagnostic.SA1124.severity = none
+
+# Enforce appropriate indentation in multi-line comments
+dotnet_diagnostic.SA1125.severity = error
+
+# Enforce consistency in comment formatting in loops
+dotnet_diagnostic.SA1126.severity = error
+
+# Disable rule for comment formatting in switch statements
+dotnet_diagnostic.SA1127.severity = none
+
+# Disable rule for comments in method bodies
+dotnet_diagnostic.SA1128.severity = none
+
+# Enforce consistent comment formatting on code elements
+dotnet_diagnostic.SA1129.severity = error
+
+# Enforce consistency in comment formatting in methods
+dotnet_diagnostic.SA1130.severity = error
+
+# Enforce consistent comment formatting for operators
+dotnet_diagnostic.SA1131.severity = error
+
+# Enforce comment alignment with code elements
+dotnet_diagnostic.SA1132.severity = error
+
+# Disable rule for comment alignment with parenthesis
+dotnet_diagnostic.SA1133.severity = none
+
+# Disable rule for excessive comment usage
+dotnet_diagnostic.SA1134.severity = none
+
+# Disable rule for comment formatting before switch statements
+dotnet_diagnostic.SA1135.severity = none
+
+# Enforce consistency in comment alignment with operators
+dotnet_diagnostic.SA1136.severity = error
+
+# Enforce consistent formatting of multi-line comments
+dotnet_diagnostic.SA1137.severity = none
+
+# Enforce comment consistency in code blocks
+dotnet_diagnostic.SA1139.severity = error
+
+# Disable rule for excessive blank lines in code blocks
+dotnet_diagnostic.SA1200.severity = none
+
+# Disable rule for excessive line breaks in code blocks
+dotnet_diagnostic.SA1201.severity = none
+
+# Disable rule for excessive space before and after operators
+dotnet_diagnostic.SA1202.severity = none
+
+# Enforce consistent spacing for method and property declarations
+dotnet_diagnostic.SA1203.severity = error
+
+# Disable rule for extra space before method return types
+dotnet_diagnostic.SA1204.severity = none
+
+# Enforce consistent spacing in method parameter declarations
+dotnet_diagnostic.SA1205.severity = error
+
+# Enforce consistent spacing in return types
+dotnet_diagnostic.SA1206.severity = none
+
+# Enforce consistent spacing in field declarations
+dotnet_diagnostic.SA1207.severity = error
+
+# Disable rule for blank lines in regions
+dotnet_diagnostic.SA1208.severity = none
+
+# Enforce proper spacing after the `=>` operator
+dotnet_diagnostic.SA1209.severity = error
+
+# Disable rule for blank lines in methods
+dotnet_diagnostic.SA1210.severity = none
+
+# Enforce consistent spacing around fields and methods
+dotnet_diagnostic.SA1211.severity = error
+
+# Enforce consistent placement of braces
+dotnet_diagnostic.SA1212.severity = error
+
+# Enforce correct spacing in array declaration lists
+dotnet_diagnostic.SA1213.severity = error
+
+# Enforce correct spacing for method body brackets
+dotnet_diagnostic.SA1214.severity = error
+
+# Enforce consistent formatting of method declarations
+dotnet_diagnostic.SA1215.severity = error
+
+# Enforce consistent formatting for field definitions
+dotnet_diagnostic.SA1216.severity = error
+
+# Enforce proper formatting for method argument declarations
+dotnet_diagnostic.SA1217.severity = error
+
+# Enforce consistent formatting of class declarations
+dotnet_diagnostic.SA1300.severity = error
+
+# Enforce proper spacing in class members
+dotnet_diagnostic.SA1301.severity = error
+
+# Enforce consistent formatting for method declarations
+dotnet_diagnostic.SA1302.severity = error
+
+# Enforce spacing rules for multi-line method parameters
+dotnet_diagnostic.SA1303.severity = error
+
+# Enforce consistent formatting for return types
+dotnet_diagnostic.SA1304.severity = error
+
+# Disable rule for string formatting in comments
+dotnet_diagnostic.SA1305.severity = none
+
+# Enforce consistent formatting of string literals
+dotnet_diagnostic.SA1306.severity = error
+
+# Enforce consistent formatting of method and property declarations
+dotnet_diagnostic.SA1307.severity = error
+
+# Enforce consistency in string formatting rules
+dotnet_diagnostic.SA1308.severity = error
+
+# Disable rule for commented-out code
+dotnet_diagnostic.SA1309.severity = none
+
+# Enforce consistent formatting of multi-line string literals
+dotnet_diagnostic.SA1310.severity = error
+
+# Enforce consistent string formatting in code blocks
+dotnet_diagnostic.SA1311.severity = error
+
+# Disable rule for comments in properties
+dotnet_diagnostic.SA1312.severity = none
+
+# Disable rule for string literal formatting
+dotnet_diagnostic.SA1313.severity = none
+
+# Enforce consistent string formatting in method calls
+dotnet_diagnostic.SA1314.severity = error
+
+# Enforce consistent formatting in namespaces
+dotnet_diagnostic.SA1400.severity = error
+
+# Disable rule for string formatting on `using` declarations
+dotnet_diagnostic.SA1401.severity = none
+
+# Enforce consistent string formatting in declarations
+dotnet_diagnostic.SA1402.severity = error
+
+# Enforce correct string formatting in method headers
+dotnet_diagnostic.SA1403.severity = error
+
+# Disable rule for formatting in using declarations
+dotnet_diagnostic.SA1404.severity = none
+
+# Enforce correct formatting in method calls
+dotnet_diagnostic.SA1405.severity = error
+
+# Enforce consistent string formatting
+dotnet_diagnostic.SA1406.severity = error
+
+# Disable rule for string formatting on method calls
+dotnet_diagnostic.SA1407.severity = none
+
+# Enforce correct formatting on method declarations
+dotnet_diagnostic.SA1408.severity = error
+
+# Enforce consistent formatting of method calls
+dotnet_diagnostic.SA1409.severity = error
+
+# Enforce consistent string formatting rules
+dotnet_diagnostic.SA1410.severity = error
+
+# Enforce correct formatting of string literals in methods
+dotnet_diagnostic.SA1411.severity = error
+
+# Enforce correct string formatting
+dotnet_diagnostic.SA1412.severity = error
+
+# Disable rule for method body spacing
+dotnet_diagnostic.SA1413.severity = none
+
+# Enforce consistent string formatting
+dotnet_diagnostic.SA1500.severity = error
+
+# Enforce correct string formatting in multi-line comments
+dotnet_diagnostic.SA1501.severity = error
+
+# Enforce proper string formatting in code elements
+dotnet_diagnostic.SA1502.severity = error
+
+# Enforce consistent formatting of multi-line string literals
+dotnet_diagnostic.SA1503.severity = error
+
+# Enforce proper spacing between method arguments
+dotnet_diagnostic.SA1504.severity = error
+
+# Enforce consistent formatting of multi-line array declarations
+dotnet_diagnostic.SA1505.severity = error
+
+# Enforce consistent formatting of nested code blocks
+dotnet_diagnostic.SA1506.severity = error
+
+# Enforce proper indentation of switch case statements
+dotnet_diagnostic.SA1507.severity = error
+
+# Enforce consistent formatting of string literals
+dotnet_diagnostic.SA1508.severity = error
+
+# Enforce consistent formatting of method and property declarations
+dotnet_diagnostic.SA1509.severity = error
+
+# Enforce consistent indentation of method and property declarations
+dotnet_diagnostic.SA1510.severity = error
+
+# Enforce correct formatting of return statements
+dotnet_diagnostic.SA1511.severity = error
+
+# Enforce correct formatting of multi-line comments
+dotnet_diagnostic.SA1512.severity = none
+
+# Enforce consistent formatting of multi-line code blocks
+dotnet_diagnostic.SA1513.severity = none
+
+# Enforce consistent string formatting in return statements
+dotnet_diagnostic.SA1514.severity = error
+
+# Disable rule for extra blank lines before code elements
+dotnet_diagnostic.SA1515.severity = none
+
+# Enforce consistent indentation and line breaks
+dotnet_diagnostic.SA1516.severity = error
+
+# Enforce consistent line breaks in multi-line return statements
+dotnet_diagnostic.SA1517.severity = error
+
+# Enforce proper formatting of multi-line method declarations
+dotnet_diagnostic.SA1518.severity = error
+
+# Enforce consistent formatting for multi-line method declarations
+dotnet_diagnostic.SA1519.severity = error
+
+# Enforce consistent line breaks after `else` statements
+dotnet_diagnostic.SA1520.severity = error
+
+# Disable rule for excessive blank lines between statements
+dotnet_diagnostic.SA1600.severity = none
+
+# Disable rule for unnecessary blank lines before code blocks
+dotnet_diagnostic.SA1601.severity = none
+
+# Disable rule for blank lines between type members
+dotnet_diagnostic.SA1602.severity = none
+
+# Enforce consistent spacing for return types
+dotnet_diagnostic.SA1603.severity = error
+
+# Disable rule for excessive whitespace in return statements
+dotnet_diagnostic.SA1604.severity = none
+
+# Enforce consistent formatting of method parameter lists
+dotnet_diagnostic.SA1605.severity = error
+
+# Disable rule for method return type spacing
+dotnet_diagnostic.SA1606.severity = none
+
+# Enforce consistent string formatting for method declarations
+dotnet_diagnostic.SA1607.severity = error
+
+# Enforce consistent string formatting for method bodies
+dotnet_diagnostic.SA1608.severity = error
+
+# Disable rule for redundant comments in return statements
+dotnet_diagnostic.SA1609.severity = none
+
+# Enforce consistent return statement formatting
+dotnet_diagnostic.SA1610.severity = error
+
+# Disable rule for comment formatting in methods
+dotnet_diagnostic.SA1611.severity = none
+
+# Enforce consistent comment formatting in methods
+dotnet_diagnostic.SA1612.severity = error
+
+# Enforce correct formatting of parameters in method declarations
+dotnet_diagnostic.SA1613.severity = error
+
+# Disable rule for blank lines in parameters
+dotnet_diagnostic.SA1614.severity = none
+
+# Disable rule for comment alignment in multi-line return statements
+dotnet_diagnostic.SA1615.severity = none
+
+# Enforce correct formatting of string literals in return statements
+dotnet_diagnostic.SA1616.severity = error
+
+# Enforce correct spacing around string literals
+dotnet_diagnostic.SA1617.severity = error
+
+# Disable rule for redundant comment usage
+dotnet_diagnostic.SA1618.severity = none
+
+# Enforce consistent formatting of string literals in return statements
+dotnet_diagnostic.SA1619.severity = error
+
+# Enforce consistent string formatting in method declarations
+dotnet_diagnostic.SA1620.severity = error
+
+# Enforce consistent formatting of method signatures
+dotnet_diagnostic.SA1621.severity = error
+
+# Enforce consistent formatting of method return statements
+dotnet_diagnostic.SA1622.severity = error
+
+# Disable rule for redundant method signature comments
+dotnet_diagnostic.SA1623.severity = none
+
+# Enforce proper formatting of multi-line declarations
+dotnet_diagnostic.SA1624.severity = error
+
+# Enforce correct indentation for method body
+dotnet_diagnostic.SA1625.severity = error
+
+# Enforce correct spacing for field declarations
+dotnet_diagnostic.SA1626.severity = error
+
+# Enforce proper formatting for multi-line field declarations
+dotnet_diagnostic.SA1627.severity = error
+
+# Enforce consistent formatting of multi-line declarations
+dotnet_diagnostic.SA1628.severity = error
+
+# Disable rule for excessive comments
+dotnet_diagnostic.SA1629.severity = none
+
+# Enforce consistent formatting for method arguments
+dotnet_diagnostic.SA1630.severity = error
+
+# Enforce consistent string formatting in parameters
+dotnet_diagnostic.SA1631.severity = error
+
+# Enforce proper string formatting in method calls
+dotnet_diagnostic.SA1632.severity = error
+
+# Disable rule for comment spacing in expressions
+dotnet_diagnostic.SA1633.severity = none
+
+# Enforce correct formatting for multi-line parameters
+dotnet_diagnostic.SA1634.severity = error
+
+# Enforce consistent string formatting for method declarations
+dotnet_diagnostic.SA1635.severity = error
+
+# Enforce proper string formatting in method signatures
+dotnet_diagnostic.SA1636.severity = error
+
+# Enforce correct indentation for string literals
+dotnet_diagnostic.SA1637.severity = error
+
+# Enforce proper formatting of return statements
+dotnet_diagnostic.SA1638.severity = error
+
+# Enforce correct formatting for multi-line declarations
+dotnet_diagnostic.SA1639.severity = error
+
+# Enforce consistent method return formatting
+dotnet_diagnostic.SA1640.severity = error
+
+# Disable rule for excessive string usage
+dotnet_diagnostic.SA1641.severity = none
+
+# Enforce consistent string formatting in multi-line statements
+dotnet_diagnostic.SA1642.severity = error
+
+# Enforce rule for documentation of comments
+dotnet_diagnostic.SA1643.severity = error
+
+# Enforce rule for summary documentation comments on methods
+dotnet_diagnostic.SA1644.severity = error
+
+# Enforce rule for summary documentation comments on properties
+dotnet_diagnostic.SA1645.severity = error
+
+# Enforce rule for summary documentation comments on fields
+dotnet_diagnostic.SA1646.severity = error
+
+# Enforce rule for summary documentation comments on events
+dotnet_diagnostic.SA1647.severity = error
+
+# Enforce rule for summary documentation comments on classes
+dotnet_diagnostic.SA1648.severity = error
+
+# Enforce rule for summary documentation comments on namespaces
+dotnet_diagnostic.SA1649.severity = error
+
+# Disable rule for summary documentation comments on enums
+dotnet_diagnostic.SA1650.severity = error
+
+# Enforce rule for documentation comments on return values
+dotnet_diagnostic.SA1651.severity = error
+
+# Disable rule for inconsistent summary documentation comments
+dotnet_diagnostic.SA1652.severity = none
+
+# Disable rule for inconsistent summary documentation comments
+dotnet_diagnostic.SA1310.severity = none
+
+#Others rules
+
+# IDE
+dotnet_diagnostic.IDE0028.severity = none
+
+dotnet_diagnostic.IDE0290.severity = none
+
+dotnet_diagnostic.IDE0007.severity = none
+
+dotnet_diagnostic.IDE0008.severity = none
+
+dotnet_diagnostic.IDE0058.severity = none
+
+dotnet_diagnostic.IDE0161.severity = none
+
+dotnet_diagnostic.IDE0300.severity = none
+
+dotnet_diagnostic.IDE0055.severity = none
+
+dotnet_diagnostic.IDE0046.severity = none
+
+# Enforce rule for consistency with nullability annotations
+dotnet_diagnostic.SX1101.severity = error
+
+# Enforce rule for checking usage of collection types
+dotnet_diagnostic.SX1309.severity = error
+
+# Enforce rule for ensuring collection usage is valid
+dotnet_diagnostic.SX1309S.severity = error
+
+# Enforce rule for nullability annotations when a value is potentially null
+dotnet_diagnostic.CS8604.severity = error
+
+dotnet_diagnostic.CA1716.severity = none
+
+dotnet_diagnostic.CA1812.severity = none
+
+dotnet_diagnostic.CA1724.severity = none
+
+dotnet_diagnostic.CA1861.severity = none
+
+dotnet_diagnostic.CA1056.severity = none
+
+dotnet_diagnostic.CA1054.severity = none
+
+dotnet_diagnostic.CA1008.severity = none
+
+dotnet_diagnostic.CA1031.severity = none
+
+dotnet_diagnostic.CA1032.severity = none
+
+dotnet_diagnostic.CA1040.severity = none
+
+dotnet_diagnostic.CA2007.severity = none
+
+dotnet_diagnostic.CA1062.severity = none
+
+dotnet_diagnostic.CA5401.severity = none
+
+dotnet_diagnostic.CA1515.severity = none
+
+dotnet_diagnostic.CA1848.severity = none
+
+dotnet_diagnostic.CA1064.severity = none
+
+dotnet_diagnostic.CA2234.severity = none
+
+dotnet_diagnostic.CA1030.severity = none
+
+dotnet_diagnostic.CA1711.severity = none
+
+dotnet_diagnostic.CA0046.severity = none
+
+dotnet_diagnostic.CA2208.severity = none
+
+dotnet_diagnostic.CA1851.severity = none
+
+dotnet_diagnostic.CA1707.severity = none
+
+dotnet_diagnostic.CA1308.severity = none
+
+dotnet_diagnostic.CA5351.severity = none

@@ -1,0 +1,26 @@
+services:
+  articles.web:
+    build:
+      context: ..
+      dockerfile: Articles.WebApi/Dockerfile
+    container_name: articles.web
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8080:8080"
+    depends_on:
+      - articles.db
+
+  articles.db:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    container_name: articles.db
+    environment:
+      POSTGRES_DB: articles
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    volumes:
+      - db_data:/var/lib/postgresql/data
+volumes:
+  db_data:
